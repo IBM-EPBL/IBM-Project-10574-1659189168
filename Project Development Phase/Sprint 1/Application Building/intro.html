@@ -1,0 +1,79 @@
+<html>
+
+<head>
+  <title>Intro</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+    .logo {
+      font-size: 30px;
+      text-align: center;
+      color: #ffff;
+      padding: 10px;
+      border: 15px;
+    }
+
+    .hand_gesture {
+      margin: 20%;
+      font-size: 35px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    body {
+      margin: 0px;
+      background-image: url("../static/gesture.jpg");
+      background-size: cover;
+      padding: 0px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class=logo style="float:left">Hand Gesture System </li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('image1')}}">Launch</a></li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('intro')}}">Introduction</a></li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('home')}}">Home</a></li>
+  </ul>
+  <div>
+    <div class="hand_gesture" style="margin-top:100px">
+      <p> Hand Gesture recognition system provides us an innovative, natural, user friendly
+        way of interaction with the computer which is more familiar to the human beings. In our project,
+        the hand region is extracted from the background by using Region of intrest. Then, we will be
+        predicting the labels based on the CNN trained model weights of hand gestures
+        using that predicted labels we apply if conditious to control some of the actions like
+        reshaping , blur, flip he\given image.</p>
+    </div>
+  </div>
+</body>
+
+</html>

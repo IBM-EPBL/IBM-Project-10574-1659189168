@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gesture</title>
+
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: right;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #111;
+    }
+
+    .active {
+      background-color: #04AA6D;
+    }
+
+    .logo {
+      font-size: 30px;
+      text-align: center;
+      color: #ffff;
+      padding: 10px;
+      border: 15px;
+    }
+
+    body {
+      background-image: url('../static/gesture-recognition.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .head1 {
+      font-size: 50px;
+      color: black;
+      text-align: justify;
+      /* margin-left: 10%; */
+      /* float: left; */
+      text-align: center;
+      margin-top: 20%;
+
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class=logo style="float:left">Hand Gesture System </li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('image1')}}">Launch</a></li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('intro')}}">Introduction</a></li>
+    <li style="font-size: 30px"><a class="active" href="{{ url_for('home')}}">Home</a></li>
+  </ul>
+
+  <h1 class="head1">HAND GESTURE RECOGNITION</h1>
+</body>
+
+</html>
